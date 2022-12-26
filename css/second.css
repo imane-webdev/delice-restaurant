@@ -1,4 +1,4 @@
-@import "css/style.css";
+@import "/css/style.css";
 /* Utility class */
 .big-title {
   font-size: var(--fs-700);
@@ -151,7 +151,7 @@
 /* ////////////////RESERVATION PAGE\\\\\\\\\\\\\\\ */
 /* BOOK TABLE SECTION */
 .reservation-hero {
-  background-image: url("images/hero-reservation.jpg");
+  background-image: url("../images/hero-reservation.jpg");
 }
 .book-table {
   min-height: 100vh;
