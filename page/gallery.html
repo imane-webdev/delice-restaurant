@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/pizza-favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/second.css" />
+    <link rel="stylesheet" href="../css/all.css" />
+    <title>Gallery</title>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONTS FOR TEST -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="mobile-nav">
+        <a href="#home">Delice</a>
+        <div class="nav-bars">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="main-nav"></div>
+      <div class="nav-header static-nav">
+        <nav class="primary-navigation">
+          <ul role="list" class="nav-list">
+            <li class="nav-list-item">
+              <a class="nav-link" href="../index.html">HOME</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="../about.html">about</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="../shop.html">shop</a>
+            </li>
+            <li class="nav-list-item dropdown-parent">
+              <a class="nav-link" href="javascript:">page</a>
+              <ul role="list" class="dropdown-list">
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="/page/reservation.html"
+                    >reservation</a
+                  >
+                </li>
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="/page/services.html"
+                    >services</a
+                  >
+                </li>
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="/page/team.html">chefs</a>
+                </li>
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="/page/menu.html">menu</a>
+                </li>
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="/page/gallery.html">gallery</a>
+                </li>
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="/page/comingsoon.html"
+                    >coming soon</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="javascript:">BLOG</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="../contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="nav-info">
+          <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <button class="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div class="search-preview">
+          <form action="" class="nav-search-preview">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Search for..."
+            />
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="main-hero gallery-hero">
+        <div class="main-hero-text">
+          <div class="hero-desc">
+            <h1 class="title white-color big-title">Gallery</h1>
+            <p class="title-text light-color">
+              The signature of Delice Land Restaurants is a world-class
+              hospitality team and an uncompromising commitment to quality
+            </p>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="gallery flow">
+          <div class="section-head flow">
+            <div class="special-head">
+              <h2 class="title">Gallery</h2>
+              <img
+                class="special-sep"
+                src="../images/title_sepp.png"
+                alt="text-separator"
+              />
+            </div>
+            <p class="title-text">
+              A various selection of warm-ups, dishes, desserts and drinks for
+              everyone and every taste!
+            </p>
+          </div>
+          <div class="gallery-filter-container">
+            <ul class="gallery-filter">
+              <li class="active" data-cat=".all-gallery">All</li>
+              <li data-cat=".pasta-gallery">Pasta</li>
+              <li data-cat=".pizza-gallery">Pizza</li>
+              <li data-cat=".dessert-gallery">Dessert</li>
+              <li data-cat=".salad-gallery">Salad</li>
+              <li data-cat=".other-gallery">Other</li>
+            </ul>
+          </div>
+          <div class="gallery-images">
+            <div class="gallery-image-item all-gallery other-gallery">
+              <div class="gallery-image">
+                <img src="../images/gallery-sushi-1.jpg" alt="" />
+              </div>
+              <div class="gallery-text">
+                <h3>
+                  <a class="heading white-color heading-link" href="#">
+                    ipsum dolor</a
+                  >
+                </h3>
+                <p class="paragraph">
+                  Lorem ipsum dolor sit amet, c onsectetur adipisicing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+            <div class="gallery-image-item all-gallery dessert-gallery">
+              <div class="gallery-image">
+                <img src="../images/gallery-croissant-1.jpg" alt="" />
+              </div>
+              <div class="gallery-text">
+                <h3>
+                  <a class="heading white-color heading-link" href="#">
+                    ipsum dolor</a
+                  >
+                </h3>
+                <p class="paragraph">
+                  Lorem ipsum dolor sit amet, c onsectetur adipisicing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+            <div class="gallery-image-item all-gallery pasta-gallery">
+              <div class="gallery-image">
+                <img src="../images/gallery-pasta-spaghitti-1.jpg" alt="" />
+              </div>
+              <div class="gallery-text">
+                <h3>
+                  <a class="heading white-color heading-link" href="#">
+                    ipsum dolor</a
+                  >
+                </h3>
+                <p class="paragraph">
+                  Lorem ipsum dolor sit amet, c onsectetur adipisicing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+            <div class="gallery-image-item all-gallery dessert-gallery">
+              <div class="gallery-image">
+                <img src="../images/gallery-pancake-1.jpg" alt="" />
+              </div>
+              <div class="gallery-text">
+                <h3>
+                  <a class="heading white-color heading-link" href="#">
+                    ipsum dolor</a
+                  >
+                </h3>
+                <p class="paragraph">
+                  Lorem ipsum dolor sit amet, c onsectetur adipisicing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+            <div class="gallery-image-item all-gallery pizza-gallery">
+              <div class="gallery-image">
+                <img src="../images/gallery-pizza-1.jpg" alt="" />
+              </div>
+              <div class="gallery-text">
+                <h3>
+                  <a class="heading white-color heading-link" href="#">
+                    ipsum dolor</a
+                  >
+                </h3>
+                <p class="paragraph">
+                  Lorem ipsum dolor sit amet, c onsectetur adipisicing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+            <div class="gallery-image-item all-gallery salad-gallery">
+              <div class="gallery-image">
+                <img src="../images/gallery-vegetable-1.jpg" alt="" />
+              </div>
+              <div class="gallery-text">
+                <h3>
+                  <a class="heading white-color heading-link" href="#">
+                    ipsum dolor</a
+                  >
+                </h3>
+                <p class="paragraph">
+                  Lorem ipsum dolor sit amet, c onsectetur adipisicing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+            <div class="gallery-image-item all-gallery pasta-gallery">
+              <div class="gallery-image">
+                <img src="../images/gallery-pasta-spaghitti-2.jpg" alt="" />
+              </div>
+              <div class="gallery-text">
+                <h3>
+                  <a class="heading white-color heading-link" href="#">
+                    ipsum dolor</a
+                  >
+                </h3>
+                <p class="paragraph">
+                  Lorem ipsum dolor sit amet, c onsectetur adipisicing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+            <div class="gallery-image-item all-gallery salad-gallery">
+              <div class="gallery-image">
+                <img src="../images/gallery-salad-3.jpg" alt="" />
+              </div>
+              <div class="gallery-text">
+                <h3>
+                  <a class="heading white-color heading-link" href="#">
+                    ipsum dolor</a
+                  >
+                </h3>
+                <p class="paragraph">
+                  Lorem ipsum dolor sit amet, c onsectetur adipisicing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+            <div class="gallery-image-item all-gallery dessert-gallery">
+              <div class="gallery-image">
+                <img src="../images/gallery-dessert-1.jpg" alt="" />
+              </div>
+              <div class="gallery-text">
+                <h3>
+                  <a class="heading white-color heading-link" href="#">
+                    ipsum dolor</a
+                  >
+                </h3>
+                <p class="paragraph">
+                  Lorem ipsum dolor sit amet, c onsectetur adipisicing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+            <div class="gallery-image-item all-gallery other-gallery">
+              <div class="gallery-image">
+                <img src="../images/gallery-tacos-1.jpg" alt="" />
+              </div>
+              <div class="gallery-text">
+                <h3>
+                  <a class="heading white-color heading-link" href="#">
+                    ipsum dolor</a
+                  >
+                </h3>
+                <p class="paragraph">
+                  Lorem ipsum dolor sit amet, c onsectetur adipisicing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+            <div class="gallery-image-item all-gallery pasta-gallery">
+              <div class="gallery-image">
+                <img src="../images/gallery-pasta-1.jpg" alt="" />
+              </div>
+              <div class="gallery-text">
+                <h3>
+                  <a class="heading white-color heading-link" href="#">
+                    ipsum dolor</a
+                  >
+                </h3>
+                <p class="paragraph">
+                  Lorem ipsum dolor sit amet, c onsectetur adipisicing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+            <div class="gallery-image-item all-gallery pizza-gallery">
+              <div class="gallery-image">
+                <img src="../images/gallery-pizza-2.jpg" alt="" />
+              </div>
+              <div class="gallery-text">
+                <h3>
+                  <a class="heading white-color heading-link" href="#">
+                    ipsum dolor</a
+                  >
+                </h3>
+                <p class="paragraph">
+                  Lorem ipsum dolor sit amet, c onsectetur adipisicing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+            <div class="gallery-image-item all-gallery other-gallery">
+              <div class="gallery-image">
+                <img src="../images/gallery-cooked-salmon-1.jpg" alt="" />
+              </div>
+              <div class="gallery-text">
+                <h3>
+                  <a class="heading white-color heading-link" href="#">
+                    ipsum dolor</a
+                  >
+                </h3>
+                <p class="paragraph">
+                  Lorem ipsum dolor sit amet, c onsectetur adipisicing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+            <div class="gallery-image-item all-gallery pasta-gallery">
+              <div class="gallery-image">
+                <img src="../images/gallery-pasta-2.jpg" alt="" />
+              </div>
+              <div class="gallery-text">
+                <h3>
+                  <a class="heading white-color heading-link" href="#">
+                    ipsum dolor</a
+                  >
+                </h3>
+                <p class="paragraph">
+                  Lorem ipsum dolor sit amet, c onsectetur adipisicing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+            <div class="gallery-image-item all-gallery salad-gallery">
+              <div class="gallery-image">
+                <img src="../images/gallery-salad-1.jpg" alt="" />
+              </div>
+              <div class="gallery-text">
+                <h3>
+                  <a class="heading white-color heading-link" href="#">
+                    ipsum dolor</a
+                  >
+                </h3>
+                <p class="paragraph">
+                  Lorem ipsum dolor sit amet, c onsectetur adipisicing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+            <div class="gallery-image-item all-gallery pizza-gallery">
+              <div class="gallery-image">
+                <img src="../images/gallery-pizza-3.jpg" alt="" />
+              </div>
+              <div class="gallery-text">
+                <h3>
+                  <a class="heading white-color heading-link" href="#">
+                    ipsum dolor</a
+                  >
+                </h3>
+                <p class="paragraph">
+                  Lorem ipsum dolor sit amet, c onsectetur adipisicing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+            <div class="gallery-image-item all-gallery salad-gallery">
+              <div class="gallery-image">
+                <img src="../images/gallery-cooked-salmon-2.jpg" alt="" />
+              </div>
+              <div class="gallery-text">
+                <h3>
+                  <a class="heading white-color heading-link" href="#">
+                    ipsum dolor</a
+                  >
+                </h3>
+                <p class="paragraph">
+                  Lorem ipsum dolor sit amet, c onsectetur adipisicing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+            <div class="gallery-image-item all-gallery dessert-gallery">
+              <div class="gallery-image">
+                <img src="../images/gallery-dessert-bomboloni-1.jpg" alt="" />
+              </div>
+              <div class="gallery-text">
+                <h3>
+                  <a class="heading white-color heading-link" href="#">
+                    ipsum dolor</a
+                  >
+                </h3>
+                <p class="paragraph">
+                  Lorem ipsum dolor sit amet, c onsectetur adipisicing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+            <div class="gallery-image-item all-gallery pizza-gallery">
+              <div class="gallery-image">
+                <img src="../images/gallery-pizza-5.jpg" alt="" />
+              </div>
+              <div class="gallery-text">
+                <h3>
+                  <a class="heading white-color heading-link" href="#">
+                    ipsum dolor</a
+                  >
+                </h3>
+                <p class="paragraph">
+                  Lorem ipsum dolor sit amet, c onsectetur adipisicing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+            <div class="gallery-image-item all-gallery other-gallery">
+              <div class="gallery-image">
+                <img src="../images/gallery-other-2.jpg" alt="" />
+              </div>
+              <div class="gallery-text">
+                <h3>
+                  <a class="heading white-color heading-link" href="#">
+                    ipsum dolor</a
+                  >
+                </h3>
+                <p class="paragraph">
+                  Lorem ipsum dolor sit amet, c onsectetur adipisicing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <!-- <div class="container"> -->
+      <nav class="secondary-navigation">
+        <div class="footer-list">
+          <ul role="list" class="footer-contact-us">
+            <li>
+              <a href="#" class="heading white-color"
+                >D<span class="color-orange">é</span>lice<span
+                  class="color-green"
+                  >L</span
+                >and</a
+              >
+            </li>
+            <li>
+              <p class="paragraph">
+                Ut enim ad minim veniam, quis nostrud at exercitation ullamco
+                laboris nisi nemo sit enim ipsam voluptatem quia voluptas
+              </p>
+            </li>
+            <li>
+              <div class="footer-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <span class="heading white-color">CONTACT US</span>
+          <ul role="list" class="footer-address">
+            <li>
+              <address>
+                <p class="footer-item">
+                  150 Duffy Ave, Hicksville, NY 11801, USA
+                </p>
+              </address>
+            </li>
+            <li>
+              <a class="footer-item" href="tel:+3805623157851"
+                >+38 056 23 15 7851</a
+              >
+            </li>
+            <li>
+              <a class="footer-item" href="mailto:delice.info@mail.com"
+                >delice.info@mail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <span class="heading white-color">QUICK LINKS</span>
+          <ul role="list">
+            <div class="footer-links">
+              <li><a class="footer-item" href="home.html">HOME</a></li>
+              <li><a class="footer-item" href="about.html">ABOUT</a></li>
+              <li><a class="footer-item" href="shop.html">SHOP</a></li>
+              <li><a class="footer-item" href="menu.html">MENU</a></li>
+              <li><a class="footer-item" href="support.html">SUPPORT</a></li>
+              <li><a class="footer-item" href="gallert.html">GALLERY</a></li>
+              <li><a class="footer-item" href="pages.html">PAGES</a></li>
+              <li><a class="footer-item" href="blog.html">BLOG</a></li>
+              <li><a class="footer-item" href="contact.html">CONTACT</a></li>
+              <li>
+                <a class="footer-item" href="reservation.html">RESERVATION</a>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <span class="heading white-color">RECENT POST</span>
+          <ul role="list" class="recent-post-container">
+            <li>
+              <div class="recent-post-item">
+                <div class="recent-post-image">
+                  <img
+                    src="../images/special-offers-strawberry-cake.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="recent-post-text">
+                  <a class="footer-item" href="#">
+                    Lorem ipsum dolor sit amet, consectetur.
+                  </a>
+                  <span class="paragraph">April 17, 2016</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="recent-post-item">
+                <div class="recent-post-image">
+                  <img
+                    src="../images/special-offers-cinnamon-pancakes.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="recent-post-text">
+                  <a class="footer-item" href="#">
+                    Lorem ipsum dolor sit amet, consectetur.
+                  </a>
+                  <span class="paragraph">April 17, 2016</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer-copyright">
+        <p>
+          © 2022 All Rights Reserved. Development & Desing by
+          <span class="owner">IMANE DRISSI</span>
+        </p>
+      </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1686 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/pizza-favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/second.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <title>Shop</title>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONTS FOR TEST -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="mobile-nav">
+        <a href="#home">Delice</a>
+        <div class="nav-bars">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="main-nav"></div>
+      <div class="nav-header static-nav">
+        <nav class="primary-navigation">
+          <ul role="list" class="nav-list">
+            <li class="nav-list-item">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="about.html">about</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="shop.html">shop</a>
+            </li>
+            <li class="nav-list-item dropdown-parent">
+              <a class="nav-link" href="javascript:">page</a>
+              <ul role="list" class="dropdown-list">
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="/page/reservation.html"
+                    >reservation</a
+                  >
+                </li>
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="/page/services.html"
+                    >services</a
+                  >
+                </li>
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="/page/team.html">chefs</a>
+                </li>
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="/page/menu.html">menu</a>
+                </li>
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="/page/gallery.html">gallery</a>
+                </li>
+                <li class="dropdown-item">
+                  <a class="dropdown-link" href="/page/comingsoon.html"
+                    >coming soon</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <!-- <li class="nav-list-item">
+              <a class="nav-link" href="javascript:">BLOG</a>
+            </li> -->
+            <li class="nav-list-item">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-navigation">
+          <div class="login-signup-btns">
+            <button class="login-signup-btn login-btn">Login</button>
+            <button class="login-signup-btn signup-btn">signup</button>
+          </div>
+          <div class="nav-shop-cart">
+            <i class="fa-solid fa-cart-shopping shop-cart-icon"></i>
+            <div class="nav-cart-amount">0</div>
+          </div>
+          <div class="nav-info">
+            <button class="search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <div class="search-preview">
+            <form action="" class="nav-search-preview">
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Search for..."
+              />
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="login-signup-section">
+        <div class="login-signup-forms">
+          <div class="login-form form">
+            <span class="login-title">Login</span>
+            <form action="#">
+              <div class="input-field">
+                <input type="text" placeholder="Enter your email" />
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div class="input-field">
+                <input
+                  type="password"
+                  class="form-pass"
+                  placeholder="password"
+                  autocomplete="on"
+                />
+                <i class="fa-solid fa-lock"></i>
+                <i class="fa-regular fa-eye-slash hideShow"></i>
+              </div>
+              <div class="checkbox-text">
+                <div class="checkbox-content">
+                  <input type="checkbox" name="logcheck" id="logcheck" />
+                  <label for="logcheck" class="form-text">Remember me</label>
+                </div>
+                <a href="#" class="form-text">Forgot password?</a>
+              </div>
+              <div class="input-field form-button">
+                <input type="button" value="Login" />
+              </div>
+            </form>
+            <div class="login-signup">
+              <span class="form-text"
+                >Not a member?
+                <a href="#" class="form-text signup-link">Sign up now</a>
+              </span>
+            </div>
+            <button class="close-signlog-form">
+              <i class="fa-solid fa-x"></i>
+            </button>
+          </div>
+          <!-- Registration Form -->
+          <div class="signup-form form">
+            <span class="login-title">Registration</span>
+            <form action="#">
+              <div class="input-field">
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  id="signup-name"
+                />
+                <i class="fa-regular fa-user"></i>
+                <small class="signup-error"></small>
+              </div>
+              <div class="input-field">
+                <input
+                  type="text"
+                  placeholder="Enter your email"
+                  id="signup-email"
+                />
+                <i class="fa-regular fa-envelope"></i>
+                <small class="signup-error"></small>
+              </div>
+              <div class="input-field">
+                <input
+                  type="password"
+                  class="form-pass"
+                  placeholder="password"
+                  id="signup-pass"
+                  autocomplete="on"
+                />
+                <i class="fa-solid fa-lock"></i>
+                <small class="signup-error"></small>
+              </div>
+              <div class="input-field">
+                <input
+                  type="password"
+                  class="form-pass"
+                  placeholder="confirm password"
+                  id="signup-confirmpass"
+                  autocomplete="on"
+                />
+                <i class="fa-solid fa-lock"></i>
+                <i class="fa-regular fa-eye-slash hideShow"></i>
+                <small class="signup-error"></small>
+              </div>
+              <div class="input-field form-button">
+                <input type="submit" value="Sign Up" />
+              </div>
+            </form>
+            <div class="login-signup">
+              <span class="form-text"
+                >Already a member?
+                <a href="#" class="form-text login-link">Login</a>
+              </span>
+            </div>
+            <button class="close-signlog-form">
+              <i class="fa-solid fa-x"></i>
+            </button>
+          </div>
+          <div class="overlay"></div>
+        </div>
+      </section>
+      <section class="main-hero shop-hero">
+        <div class="main-hero-text">
+          <div class="hero-desc">
+            <h1 class="title white-color big-title">Our Shop</h1>
+            <p class="title-text light-color">
+              The signature of Delice Land Restaurants is a world-class
+              hospitality team and an uncompromising commitment to quality
+            </p>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </section>
+      <section class="shop-section section-padding">
+        <div class="container">
+          <div class="shop-section-container">
+            <div class="shop-aside">
+              <div class="shop-aside-item">
+                <span class="heading">CATEGORIES</span>
+                <ul class="shop-categories-list">
+                  <li class="active" data-shopcat=".shop-all">ALL</li>
+                  <li data-shopcat=".shop-pasta">Pasta</li>
+                  <li data-shopcat=".shop-pizza">Pizza</li>
+                  <li data-shopcat=".shop-dessert">Dessert</li>
+                  <li data-shopcat=".shop-salad">Salad</li>
+                  <li data-shopcat=".shop-others">Others</li>
+                </ul>
+              </div>
+              <div class="shop-aside-item">
+                <span class="heading">PRICE</span>
+                <form class="shop-price-range">
+                  <input
+                    type="range"
+                    class="price-filter"
+                    min="0"
+                    max="100"
+                    value="50"
+                  />
+                </form>
+                <p class="price-range-value"></p>
+              </div>
+              <div class="shop-aside-item">
+                <span class="heading">TAST</span>
+                <form class="shop-tast-list">
+                  <div>
+                    <input type="checkbox" id="vegan" name="vegan" />
+                    <label for="vegan">Vegan</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="poultry" name="poultry" />
+                    <label for="poultry">Poultry</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="beef" name="beef" />
+                    <label for="beef">Beef</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="cheese" name="cheese" />
+                    <label for="cheese">Cheese</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="sauces" name="sauces" />
+                    <label for="sauces">Sauces</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="chocolate" name="chocolate" />
+                    <label for="chocolate">Chocolate</label>
+                  </div>
+                </form>
+              </div>
+              <i class="fa-solid fa-x shope-aside-close"></i>
+            </div>
+            <i class="fa-solid fa-gear fa-3x display-shop-aside"></i>
+            <div class="shop-products-container">
+              <div class="shop-products-tools">
+                <div class="shop-tools-left">
+                  <span class="total-products"
+                    >Found <span class="found-total-products">5</span> items
+                  </span>
+                </div>
+                <ul class="shop-tools-right">
+                  <li>
+                    <form class="page-length-form">
+                      <label for="page-length">Shown items per page</label>
+                      <select
+                        name="page-length"
+                        id="page-length"
+                        class="page-length"
+                      >
+                        <option value="10">10</option>
+                        <option value="10">20</option>
+                        <option value="10">30</option>
+                        <option value="10">40</option>
+                      </select>
+                    </form>
+                  </li>
+                  <li>
+                    <form class="page-sort">
+                      <label for="page-length">Sort by</label>
+                      <select
+                        name="products-sort"
+                        id="products-sort"
+                        class="products-sort"
+                      >
+                        <option value="featured">Featured</option>
+                        <option value="pricelowtohigh">
+                          Price: Low to High
+                        </option>
+                        <option value="pricehighto low">
+                          Price: High to low
+                        </option>
+                        <option value="new">New Arrivals</option>
+                      </select>
+                    </form>
+                  </li>
+                  <li class="display-products-list">
+                    <i class="fa-sharp fa-solid fa-list"></i>
+                  </li>
+                  <li class="display-products-grid">
+                    <i class="fa-solid fa-table-cells"></i>
+                  </li>
+                </ul>
+              </div>
+              <div class="shop-products">
+                <div class="shop-products-items">
+                  <!--  
+                  <div class="shop-products-item shop-all shop-pizza"  data-vegan>
+                    <div class="shop-image-box">
+                      <img
+                        src="/images/shop-spinash-pizza-640X640.jpg"
+                        alt="spinash pizza"
+                      />
+                      <div class="shop-cta">
+                        <a href="#" class="shop-cart-btn">ADD TO CART</a>
+                        <button
+                          type="button"
+                          class="shop-view-btn view-prev-btn"
+                          data-shop="p-1"
+                        >
+                          QUICK VIEW
+                        </button>
+                      </div>
+                      <button class="shop-favorit-box">
+                        <i class="fa-solid fa-heart shop-favorit"></i>
+                      <button>
+                    </div>
+                    <div class="shop-product-desc">
+                      <h3 class="heading-link view-prev-btn"  data-shop="p-1"><button class="prev-btn-link">Spinach Pizza</button> </h3>
+                      <p class="paragraph">
+                        Spinach adds depth, texture, and flavor to a variety of
+                        pizzas. DeliceLand uses baby spinach because it is
+                        sweeter than mature spinach.
+                      </p>
+                      <span class="special-price">$6.25</span>
+                    </div>
+                  </div>
+                  <div class="shop-products-item shop-all shop-dessert"  data-chocolate>
+                    <div class="shop-image-box">
+                      <img
+                        src="/images/shop-white-chocolate-cherry-cake.jpg"
+                        alt=""
+                      />
+                      <div class="shop-cta">
+                        <a href="#" class="shop-cart-btn">ADD TO CART</a>
+                        <button
+                          type="button"
+                          class="shop-view-btn view-prev-btn"
+                          data-shop="p-2"
+                        >
+                          QUICK VIEW
+                        </button>
+                      </div>
+                      <button class="shop-favorit-box">
+                        <i class="fa-solid fa-heart shop-favorit"></i>
+                      <button>
+                    </div>
+                    <div class="shop-product-desc">
+                      <h3 class="heading-link view-prev-btn" data-shop="p-2"><button class="prev-btn-link"> White Cherry Cake</button></h3>
+                      <p class="paragraph">
+                        White Forest Cake is two layers of soft, buttery White
+                        Chocolate Cake filled with amaretto-spiked Cherry Sauce
+                      </p>
+                      <span class="special-price">$12</span>
+                    </div>
+                  </div>
+                  <div class="shop-products-item shop-all shop-salad" data-cheese>
+                    <div class="shop-image-box">
+                      <img src="/images//shop-green-salad-640X640.jpg" alt="" />
+                      <div class="shop-cta">
+                        <a href="#" class="shop-cart-btn">ADD TO CART</a>
+                        <button
+                          type="button"
+                          class="shop-view-btn view-prev-btn"
+                          data-shop="p-3"
+                        >
+                          QUICK VIEW
+                        </button>
+                      </div>
+                      <button class="shop-favorit-box">
+                        <i class="fa-solid fa-heart shop-favorit"></i>
+                      <button>
+                    </div>
+                    <div class="shop-product-desc">
+                      <h3 class="heading-link view-prev-btn"  data-shop="p-3"><button class="prev-btn-link">Green Salad</button></h3>
+                      <p class="paragraph">
+                        Organic kale, dried cranberries, almonds, shaved
+                        parmesan, avocado, with balsamic vinaigrette dressing
+                      </p>
+                      <span class="special-price">$4.25</span>
+                    </div>
+                  </div>
+                  <div class="shop-products-item shop-all shop-pizza" data-cheese >
+                    <div class="shop-image-box">
+                      <img
+                        src="/images/shop-pizza-quattro-stagioni.jpg"
+                        alt=""
+                      />
+                      <div class="shop-cta">
+                        <a href="#" class="shop-cart-btn">ADD TO CART</a>
+                        <button
+                          type="button"
+                          class="shop-view-btn view-prev-btn"
+                          data-shop="p-4"
+                        >
+                          QUICK VIEW
+                        </button>
+                      </div>
+                      <button class="shop-favorit-box">
+                        <i class="fa-solid fa-heart shop-favorit"></i>
+                      <button>
+                    </div>
+                    <div class="shop-product-desc">
+                      <h3 class="heading-link view-prev-btn"  data-shop="p-4"><button class="prev-btn-link">Pizza quattro stagioni</button></h3>
+                      <p class="paragraph">
+                        Loaded with fresh mushrooms, prosciutto ham, artichoke
+                        hearts and mozzarella on organic tomato sauce. Dusted
+                        with fresh parsley.
+                      </p>
+                      <span class="special-price">$18.25</span>
+                    </div>
+                  </div>
+                  <div class="shop-products-item shop-all shop-dessert" data-chocolate>
+                    <div class="shop-image-box">
+                      <img src="/images/shop-brownies.jpg" alt="" />
+                      <div class="shop-cta">
+                        <a href="#" class="shop-cart-btn">ADD TO CART</a>
+                        <button
+                          type="button"
+                          class="shop-view-btn view-prev-btn"
+                          data-shop="p-5"
+                        >
+                          QUICK VIEW
+                        </button>
+                      </div>
+                      <button class="shop-favorit-box">
+                        <i class="fa-solid fa-heart shop-favorit"></i>
+                      <button>
+                    </div>
+                    <div class="shop-product-desc">
+                      <h3 class="heading-link view-prev-btn"  data-shop="p-5"><button class="prev-btn-link">Dark Brownies</button></h3>
+                      <p class="paragraph">
+                        Where it all began—our original brownie recipe has stood
+                        the test of time and remains our number one best seller!
+                        Dark and decadent brownies, folded with crunchy pecans,
+                        hug a layer of creamy caramel. Enjoy four of these
+                        famous treats in a decorative gift tin.
+                      </p>
+                      <span class="special-price">$6.25</span>
+                    </div>
+                  </div>
+                  <div class="shop-products-item shop-all shop-pasta"  data-beef>
+                    <div class="shop-image-box">
+                      <img src="/images/shop-pasta-and-meat-balls.jpg" alt="" />
+                      <div class="shop-cta">
+                        <a href="#" class="shop-cart-btn">ADD TO CART</a>
+                        <button
+                          type="button"
+                          class="shop-view-btn view-prev-btn"
+                          data-shop="p-6"
+                        >
+                          QUICK VIEW
+                        </button>
+                      </div>
+                      <button class="shop-favorit-box">
+                        <i class="fa-solid fa-heart shop-favorit"></i>
+                      <button>
+                    </div>
+                    <div class="shop-product-desc">
+                      <h3 class="heading-link view-prev-btn"  data-shop="p-6"><button class="prev-btn-link">Pasta and Meat Balls</button></h3>
+                      <p class="paragraph">
+                        Where it all began—our original brownie recipe has stood
+                        the test of time and remains our number one best seller!
+                        Dark and decadent brownies, folded with crunchy pecans,
+                        hug a layer of creamy caramel. Enjoy four of these
+                        famous treats in a decorative gift tin.
+                      </p>
+                      <span class="special-price">$6.25</span>
+                    </div>
+                  </div>
+                  <div class="shop-products-item shop-all shop-pizza" data-cheese>
+                    <div class="shop-image-box">
+                      <img src="/images/shop-mushroom-pizza.jpg" alt="" />
+                      <div class="shop-cta">
+                        <a href="#" class="shop-cart-btn">ADD TO CART</a>
+                        <button
+                          type="button"
+                          class="shop-view-btn view-prev-btn"
+                          data-shop="p-7"
+                        >
+                          QUICK VIEW
+                        </button>
+                      </div>
+                      <button class="shop-favorit-box">
+                        <i class="fa-solid fa-heart shop-favorit"></i>
+                      <button>
+                    </div>
+                    <div class="shop-product-desc">
+                      <h3 class="heading-link view-prev-btn"  data-shop="p-7"><button class="prev-btn-link">Mushroom Pizza</button></h3>
+                      <p class="paragraph">
+                        Our signature mushroom cream base with mozzarella,
+                        loaded with fresh sliced mushrooms, Grana Padano cheese,
+                        and black pepper. Dusted with fresh parsley.
+                      </p>
+                      <span class="special-price">$26.25</span>
+                    </div>
+                  </div>
+                  <div class="shop-products-item shop-all shop-dessert"  data-chocolate>
+                    <div class="shop-image-box">
+                      <img src="/images/shop-chocolat-cake.jpg" alt="" />
+                      <div class="shop-cta">
+                        <a href="#" class="shop-cart-btn">ADD TO CART</a>
+                        <button
+                          type="button"
+                          class="shop-view-btn view-prev-btn"
+                          data-shop="p-8"
+                        >
+                          QUICK VIEW
+                        </button>
+                      </div>
+                      <button class="shop-favorit-box">
+                        <i class="fa-solid fa-heart shop-favorit"></i>
+                      <button>
+                    </div>
+                    <div class="shop-product-desc">
+                      <h3 class="heading-link view-prev-btn"  data-shop="p-8"><button class="prev-btn-link">Chocolate cake</button></h3>
+                      <p class="paragraph">
+                        Our signature mushroom cream base with mozzarella,
+                        loaded with fresh sliced mushrooms, Grana Padano cheese,
+                        and black pepper. Dusted with fresh parsley.
+                      </p>
+                      <span class="special-price">$26.25</span>
+                    </div>
+                  </div>
+                  <div class="shop-products-item shop-allshop-pizza"  data-beef>
+                    <div class="shop-image-box">
+                      <img src="/images/gallery-pizza-3.jpg" alt="" />
+                      <div class="shop-cta">
+                        <a href="#" class="shop-cart-btn">ADD TO CART</a>
+                        <button
+                          type="button"
+                          class="shop-view-btn view-prev-btn"
+                          data-shop="p-9"
+                        >
+                          QUICK VIEW
+                        </button>
+                      </div>
+                      <button class="shop-favorit-box">
+                        <i class="fa-solid fa-heart shop-favorit"></i>
+                      <button>
+                    </div>
+                    <div class="shop-product-desc">
+                      <h3 class="heading-link view-prev-btn"  data-shop="p-9"><button class="prev-btn-link">Salami Pizza</button></h3>
+                      <p class="paragraph">
+                        A feast of genoa salami bathed in Pecorino Romano cheese
+                        and mozzarella on organic tomato sauce. Dusted with
+                        fresh parsley.
+                      </p>
+                      <span class="special-price">$26.25</span>
+                    </div>
+                  </div>
+                  <div class="shop-products-item shop-all shop-pasta" data-beef data-sauces>
+                    <div class="shop-image-box">
+                      <img src="/images/shop-gnocchi-meat-sauce.jpg" alt="" />
+                      <div class="shop-cta">
+                        <a href="#" class="shop-cart-btn">ADD TO CART</a>
+                        <button
+                          type="button"
+                          class="shop-view-btn view-prev-btn"
+                          data-shop="p-10"
+                        >
+                          QUICK VIEW
+                        </button>
+                      </div>
+                      <button class="shop-favorit-box">
+                        <i class="fa-solid fa-heart shop-favorit"></i>
+                      <button>
+                    </div>
+                    <div class="shop-product-desc">
+                      <h3 class="heading-link view-prev-btn"  data-shop="p-10"><button class="prev-btn-link">Gnocchi Combination</button></h3>
+                      <p class="paragraph">
+                        Gnocchi with three different sauces (bolognese, Alfredo,
+                        and palomino). Served with a salad, choice of dressing,
+                        rolls, and butter.
+                      </p>
+                      <span class="special-price">$26.25</span>
+                    </div>
+                  </div>
+                  <div class="shop-products-item shop-all shop-others" data-beef>
+                    <div class="shop-image-box">
+                      <img src="/images/shop-lettuce-wrap-burger.jpg" alt="" />
+                      <div class="shop-cta">
+                        <a href="#" class="shop-cart-btn">ADD TO CART</a>
+                        <button
+                          type="button"
+                          class="shop-view-btn view-prev-btn"
+                          data-shop="p-11"
+                        >
+                          QUICK VIEW
+                        </button>
+                      </div>
+                      <button class="shop-favorit-box">
+                        <i class="fa-solid fa-heart shop-favorit"></i>
+                      <button>
+                    </div>
+                    <div class="shop-product-desc">
+                      <h3 class="heading-link view-prev-btn"  data-shop="p-11"><button class="prev-btn-link">Gourmet Burger</button></h3>
+                      <p class="paragraph">
+                        This gourmet burger recipe is made with juicy ground
+                        beef, a homemade red wine bacon sauce, caramelized
+                        onions, a whole grain aioli and fresh watercress.
+                      </p>
+                      <span class="special-price">$26.25</span>
+                    </div>
+                  </div>
+                  <div class="shop-products-item shop-all shop-salad" data-cheese>
+                    <div class="shop-image-box">
+                      <img src="/images/shop-mediterranean-salad.jpg" alt="" />
+                      <div class="shop-cta">
+                        <a href="#" class="shop-cart-btn">ADD TO CART</a>
+                        <button
+                          type="button"
+                          class="shop-view-btn view-prev-btn"
+                          data-shop="p-12"
+                        >
+                          QUICK VIEW
+                        </button>
+                      </div>
+                      <button class="shop-favorit-box">
+                        <i class="fa-solid fa-heart shop-favorit"></i>
+                      <button>
+                    </div>
+                    <div class="shop-product-desc">
+                      <h3 class="heading-link view-prev-btn"  data-shop="p-12"><button class="prev-btn-link">Mediterranean Salad</button></h3>
+                      <p class="paragraph">
+                        full of bright fresh vegetables, sprinkled with the best
+                        parmesan cheese and toasted sunflower seeds and tossed
+                        with a lemony, red wine vinegar dressing.
+                      </p>
+                      <span class="special-price">$26.25</span>
+                    </div>
+                  </div>
+                  <div class="shop-products-item shop-all shop-pasta"  data-cheese>
+                    <div class="shop-image-box">
+                      <img src="/images/shop-orzo-pasta-salad.jpg" alt="" />
+                      <div class="shop-cta">
+                        <a href="#" class="shop-cart-btn">ADD TO CART</a>
+                        <button
+                          type="button"
+                          class="shop-view-btn view-prev-btn"
+                          data-shop="p-13"
+                        >
+                          QUICK VIEW
+                        </button>
+                      </div>
+                      <button class="shop-favorit-box">
+                        <i class="fa-solid fa-heart shop-favorit"></i>
+                      <button>
+                    </div>
+                    <div class="shop-product-desc">
+                      <h3 class="heading-link view-prev-btn"  data-shop="p-13"><button class="prev-btn-link">Orzo Pasta Salad</button></h3>
+                      <p class="paragraph">
+                        Orzo pasta salad with roasted vegetables and lemon
+                        vinaigrette is the perfect Summer salad. It’s full of
+                        healthy vegetables and tossed with a bright and zingy
+                        lemon dressing.
+                      </p>
+                      <span class="special-price">$26.25</span>
+                    </div>
+                  </div>
+                  <div class="shop-products-item shop-all shop-others">
+                    <div class="shop-image-box">
+                      <img src="/images/shop-sourdough-bagels.jpg" alt="" />
+                      <div class="shop-cta">
+                        <a href="#" class="shop-cart-btn">ADD TO CART</a>
+                        <button
+                          type="button"
+                          class="shop-view-btn view-prev-btn"
+                          data-shop="p-14"
+                        >
+                          QUICK VIEW
+                        </button>
+                      </div>
+                      <button class="shop-favorit-box">
+                        <i class="fa-solid fa-heart shop-favorit"></i>
+                      <button>
+                    </div>
+                    <div class="shop-product-desc">
+                      <h3 class="heading-link view-prev-btn" data-shop="p-14"><button class="prev-btn-link">Sourdough Bagels</button></h3>
+                      <p class="paragraph">
+                        Sourdough bagels are the ultimate breakfast or brunch
+                        food. Serve them with cream cheese or butter, or use
+                        them as a delicious vessel for a breakfast sandwich or
+                        lox board.
+                      </p>
+                      <span class="special-price">$26.25</span>
+                    </div>
+                  </div>
+                  <div class="shop-products-item shop-all shop-dessert" >
+                    <div class="shop-image-box">
+                      <img src="/images/shop-creamy-lemon-tart.jpg" alt="" />
+                      <div class="shop-cta">
+                        <a href="#" class="shop-cart-btn">ADD TO CART</a>
+                        <button
+                          type="button"
+                          class="shop-view-btn view-prev-btn"
+                          data-shop="p-15"
+                        >
+                          QUICK VIEW
+                        </button>
+                      </div>
+                      <button class="shop-favorit-box">
+                        <i class="fa-solid fa-heart shop-favorit"></i>
+                      <button>
+                    </div>
+                    <div class="shop-product-desc">
+                      <h3 class="heading-link view-prev-btn"  data-shop="p-15"><button class="prev-btn-link">Creamy Lemon Tart</button></h3>
+                      <p class="paragraph">
+                        This creamy lemon tart with fresh berries is a cross
+                        between a lemon cheesecake and lemon curd tart. It’s
+                        creamy, lemony and perfect for Spring.
+                      </p>
+                      <span class="special-price">$26.25</span>
+                    </div>
+                  </div>
+                  <div class="shop-products-item shop-all shop-others"  data-poultry>
+                    <div class="shop-image-box">
+                      <img src="/images/shop-ground-turkey-tacos.jpg" alt="" />
+                      <div class="shop-cta">
+                        <a href="#" class="shop-cart-btn">ADD TO CART</a>
+                        <button
+                          type="button"
+                          class="shop-view-btn view-prev-btn"
+                          data-shop="p-16"
+                        >
+                          QUICK VIEW
+                        </button>
+                      </div>
+                      <button class="shop-favorit-box">
+                        <i class="fa-solid fa-heart shop-favorit"></i>
+                      <button>
+                    </div>
+                    <div class="shop-product-desc">
+                      <h3 class="heading-link view-prev-btn"  data-shop="p-16"><button class="prev-btn-link">Ground Turkey Tacos</button></h3>
+                      <p class="paragraph">
+                        Our fresh tacos are delicious any way you make it. Mix
+                        and match protein, toppings, house-made guacamole and
+                        salsa. Choose from a hard or soft tortilla and make this
+                        a meal you may crave again tomorrow.
+                      </p>
+                      <span class="special-price">$26.25</span>
+                    </div>
+                  </div>
+                  <div class="shop-products-item shop-all shop-others" >
+                    <div class="shop-image-box">
+                      <img src="/images/shop-puff-pastry-tart.jpg" alt="" />
+                      <div class="shop-cta">
+                        <a href="#" class="shop-cart-btn">ADD TO CART</a>
+                        <button
+                          type="button"
+                          class="shop-view-btn view-prev-btn"
+                          data-shop="p-17"
+                        >
+                          QUICK VIEW
+                        </button>
+                      </div>
+                      <button class="shop-favorit-box">
+                        <i class="fa-solid fa-heart shop-favorit"></i>
+                      <button>
+                    </div>
+                    <div class="shop-product-desc">
+                      <h3 class="heading-link view-prev-btn"  data-shop="p-17"><button class="prev-btn-link">Puff Pastry Tart</button></h3>
+                      <p class="paragraph">
+                        Light, versatile and ready to melt in the mouth, puff
+                        pastry tarts are a winner. From nibbles to main meals or
+                        delightful desserts, we’ve got just the inspiration you
+                        need to add a tart or two to any menu.
+                      </p>
+                      <span class="special-price">$26.25</span>
+                    </div>
+                  </div>
+                  <div class="shop-products-item shop-all shop-others" data-beef>
+                    <div class="shop-image-box">
+                      <img src="/images/shop-picanha-steak.jpg" alt="" />
+                      <div class="shop-cta">
+                        <a href="#" class="shop-cart-btn">ADD TO CART</a>
+                        <button
+                          type="button"
+                          class="shop-view-btn view-prev-btn"
+                          data-shop="p-18"
+                        >
+                          QUICK VIEW
+                        </button>
+                      </div>
+                      <button class="shop-favorit-box">
+                        <i class="fa-solid fa-heart shop-favorit"></i>
+                      <button>
+                    </div>
+                    <div class="shop-product-desc">
+                      <h3 class="heading-link view-prev-btn"  data-shop="p-18"><button class="prev-btn-link">Picanha Steak</button></h3>
+                      <p class="paragraph">
+                        Picanha is a popular cut of beef found in Brazil. It is
+                        also commonly found in Portugal. This cut is known for
+                        being juicy, tender
+                      </p>
+                      <span class="special-price">$26.25</span>
+                    </div>
+                  </div>
+                  <div class="shop-products-item shop-all shop-dessert" >
+                    <div class="shop-image-box">
+                      <img src="/images/shop-lemon-cake.jpg" alt="" />
+                      <div class="shop-cta">
+                        <a href="#" class="shop-cart-btn">ADD TO CART</a>
+                        <button
+                          type="button"
+                          class="shop-view-btn view-prev-btn"
+                          data-shop="p-19"
+                        >
+                          QUICK VIEW
+                        </button>
+                      </div>
+                      <button class="shop-favorit-box">
+                        <i class="fa-solid fa-heart shop-favorit"></i>
+                      <button>
+                    </div>
+                    <div class="shop-product-desc">
+                      <h3 class="heading-link view-prev-btn"  data-shop="p-19"><button class="prev-btn-link">Moist Lemon Cake</button></h3>
+                      <p class="paragraph">
+                        Every bite of this supremely moist pound cake is
+                        bursting with fresh lemon flavor and the lemon glaze on
+                        top will have you hooked after just one bite.
+                      </p>
+                      <span class="special-price">$26.25</span>
+                    </div>
+                  </div>
+                  <div class="shop-products-item shop-all shop-salad" data-chesse>
+                    <div class="shop-image-box">
+                      <img src="/images/shop-feta-salad.jpg" alt="" />
+                      <div class="shop-cta">
+                        <a href="#" class="shop-cart-btn">ADD TO CART</a>
+                        <button
+                          type="button"
+                          class="shop-view-btn view-prev-btn"
+                          data-shop="p-20"
+                        >
+                          QUICK VIEW
+                        </button>
+                      </div>
+                      <button class="shop-favorit-box">
+                        <i class="fa-solid fa-heart shop-favorit"></i>
+                      <button>
+                    </div>
+                    <div class="shop-product-desc">
+                      <h3 class="heading-link view-prev-btn"  data-shop="p-20"><button class="prev-btn-link">Greek Salad</button></h3>
+                      <p class="paragraph">
+                        Romaine Lettuce, Cherry Tomato, Cucumber, Red Onion,
+                        Bell Pepper, Feta Cheese, Dill, Olives, Dressed with
+                        Olive Oil.
+                      </p>
+                      <span class="special-price">$26.25</span>
+                    </div>
+                  </div>
+
+                  -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="shop-cart-section">
+        <div class="shop-cart">
+          <i class="fa-solid fa-x close-cart"></i>
+          <span class="intro-heading">Your Cart</span>
+          <div class="shop-cart-item"></div>
+          <div class="shop-cart-subtotal">
+            <span class="total-items"> SUBTOTAL (0 items):</span>
+            <span class="shop-cart-total">$0</span>
+          </div>
+          <button class="shop-cart-checkout">
+            CHECKOUT <i class="fa-solid fa-right-long"></i>
+          </button>
+        </div>
+      </section>
+      <section class="shop-products-preview">
+        <div class="shop-preview" data-preview="p-1">
+          <div class="preview-image-box">
+            <img
+              src="/images/shop-spinash-pizza-640X640.jpg"
+              alt="prev pizza"
+            />
+          </div>
+          <div class="preview-shop-info">
+            <div class="title-prev">Spinash Pizza</div>
+            <!-- <div class="preview-shop-choice">
+               <div class="heading">Type</div> -->
+            <!-- <form>
+                <div>
+                  <label for="ready_01">
+                    <input
+                      type="radio"
+                      id="ready_01"
+                      name="eatChoice"
+                      value="readyToEat"
+                    />
+                    <span>Ready To Eat</span>
+                  </label>
+                </div>
+                <div>
+                  <label for="partially_01">
+                    <input
+                      type="radio"
+                      id="partially_01"
+                      name="eatChoice"
+                      value="partiallyCooked"
+                    />
+                    <span>Partially Cooked</span>
+                  </label>
+                </div>
+              </form> 
+            </div> -->
+            <span class="prev-price"
+              >Price <span class="special-price">$6.25</span>
+            </span>
+            <div class="shop-in-stock active-stock">
+              <span></span>
+              <span> In stock</span>
+            </div>
+            <div class="shop-payment">
+              <div class="shop-cart-btn">ADD TO CART</div>
+              <a href="#" class="shop-payment-options">More payment options</a>
+            </div>
+            <p class="paragraph">
+              Spinach adds depth, texture, and flavor to a variety of pizzas.
+              DeliceLand uses baby spinach because it is sweeter than mature
+              spinach. Spinach is front and center on our Spinach & Feta pizza.
+              The vegetable balances the tangy feta cheese, and spinach’s earthy
+              flavor matches the nuttiness of Parmesan cheese.
+            </p>
+          </div>
+          <i class="fa-solid fa-x shop-close"></i>
+        </div>
+        <div class="shop-preview" data-preview="p-2">
+          <div class="preview-image-box">
+            <img
+              src="/images/shop-white-chocolate-cherry-cake.jpg"
+              alt="prev pizza"
+            />
+          </div>
+          <div class="preview-shop-info">
+            <div class="title-prev">White Cherry Cake</div>
+            <span class="prev-price"
+              >Price <span class="special-price">$8.40</span></span
+            >
+            <div class="shop-in-stock active-stock">
+              <span></span>
+              <span> In stock</span>
+            </div>
+            <div class="shop-payment">
+              <div class="shop-cart-btn">ADD TO CART</div>
+              <a href="#" class="shop-payment-options">More payment options</a>
+            </div>
+            <p class="paragraph">
+              White Forest Cake is two layers of soft, buttery White Chocolate
+              Cake filled with amaretto-spiked Cherry Sauce that's covered in
+              the most luscious White Chocolate Ganache Buttercream.
+            </p>
+          </div>
+          <i class="fa-solid fa-x shop-close"></i>
+        </div>
+        <div class="shop-preview" data-preview="p-3">
+          <div class="preview-image-box">
+            <img src="/images/shop-green-salad-640X640.jpg" alt="prev pizza" />
+          </div>
+          <div class="preview-shop-info">
+            <div class="title-prev">Green Salad</div>
+
+            <span class="prev-price"
+              >Price <span class="special-price">$4.25</span></span
+            >
+            <div class="shop-in-stock active-stock">
+              <span></span>
+              <span> In stock</span>
+            </div>
+            <div class="shop-payment">
+              <div class="shop-cart-btn">ADD TO CART</div>
+              <a href="#" class="shop-payment-options">More payment options</a>
+            </div>
+            <p class="paragraph">
+              Organic kale, dried cranberries, almonds, shaved parmesan,
+              avocado, with balsamic vinaigrette dressing
+            </p>
+          </div>
+          <i class="fa-solid fa-x shop-close"></i>
+        </div>
+        <div class="shop-preview" data-preview="p-4">
+          <div class="preview-image-box">
+            <img
+              src="/images/shop-pizza-quattro-stagioni.jpg"
+              alt="prev pizza"
+            />
+          </div>
+          <div class="preview-shop-info">
+            <div class="title-prev">Pizza quattro stagioni</div>
+            <!-- <div class="preview-shop-choice">
+              <div class="heading">Type</div>
+              <form>
+                <div>
+                  <label for="ready_02">
+                    <input
+                      type="radio"
+                      id="ready_02"
+                      name="eatChoice"
+                      value="readyToEat"
+                    />
+                    <span>Ready To Eat</span>
+                  </label>
+                </div>
+                <div>
+                  <label for="partially_02">
+                    <input
+                      type="radio"
+                      id="partially_02"
+                      name="eatChoice"
+                      value="partiallyCooked"
+                    />
+                    <span>Partially Cooked</span>
+                  </label>
+                </div>
+              </form>
+            </div> -->
+
+            <span class="prev-price"
+              >Price <span class="special-price">$18.25</span></span
+            >
+            <div class="shop-in-stock active-stock">
+              <span></span>
+              <span> In stock</span>
+            </div>
+            <div class="shop-payment">
+              <div class="shop-cart-btn">ADD TO CART</div>
+              <a href="#" class="shop-payment-options">More payment options</a>
+            </div>
+            <p class="paragraph">
+              Loaded with fresh mushrooms, prosciutto ham, artichoke hearts and
+              mozzarella on organic tomato sauce. Dusted with fresh parsley.
+            </p>
+          </div>
+          <i class="fa-solid fa-x shop-close"></i>
+        </div>
+        <div class="shop-preview" data-preview="p-5">
+          <div class="preview-image-box">
+            <img src="/images/shop-brownies.jpg" alt="prev pizza" />
+          </div>
+          <div class="preview-shop-info">
+            <div class="title-prev">Dark Brownies</div>
+            <span class="prev-price"
+              >Price <span class="special-price">$18.25</span></span
+            >
+            <div class="shop-in-stock active-stock">
+              <span></span>
+              <span> In stock</span>
+            </div>
+            <div class="shop-payment">
+              <div class="shop-cart-btn">ADD TO CART</div>
+              <a href="#" class="shop-payment-options">More payment options</a>
+            </div>
+            <p class="paragraph">
+              Where it all began—our original brownie recipe has stood the test
+              of time and remains our number one best seller! Dark and decadent
+              brownies, folded with crunchy pecans, hug a layer of creamy
+              caramel. Enjoy four of these famous treats in a decorative gift
+              tin.
+            </p>
+          </div>
+          <i class="fa-solid fa-x shop-close"></i>
+        </div>
+        <div class="shop-preview" data-preview="p-6">
+          <div class="preview-image-box">
+            <img src="/images/shop-pasta-and-meat-balls.jpg" alt="prev pizza" />
+          </div>
+          <div class="preview-shop-info">
+            <div class="title-prev">Pasta and Meat Balls</div>
+            <span class="prev-price"
+              >Price <span class="special-price">$18.25</span></span
+            >
+            <div class="shop-in-stock active-stock">
+              <span></span>
+              <span> In stock</span>
+            </div>
+            <div class="shop-payment">
+              <div class="shop-cart-btn">ADD TO CART</div>
+              <a href="#" class="shop-payment-options">More payment options</a>
+            </div>
+            <p class="paragraph">
+              Comfort food. Our bolognese meat sauce topped with 3
+              mouth-watering meat balls. Choose your own short or long pasta.
+            </p>
+          </div>
+          <i class="fa-solid fa-x shop-close"></i>
+        </div>
+        <div class="shop-preview" data-preview="p-7">
+          <div class="preview-image-box">
+            <img src="/images/shop-mushroom-pizza.jpg" alt="prev pizza" />
+          </div>
+          <div class="preview-shop-info">
+            <div class="title-prev">Mushroom Pizza</div>
+            <!-- <div class="preview-shop-choice">
+              <div class="heading">Type</div>
+              <form>
+                <div>
+                  <label for="ready_03">
+                    <input
+                      type="radio"
+                      id="ready_03"
+                      name="eatChoice"
+                      value="readyToEat"
+                    />
+                    <span>Ready To Eat</span>
+                  </label>
+                </div>
+                <div>
+                  <label for="partially_03">
+                    <input
+                      type="radio"
+                      id="partially_03"
+                      name="eatChoice"
+                      value="partiallyCooked"
+                    />
+                    <span>Partially Cooked</span>
+                  </label>
+                </div>
+              </form>
+            </div> -->
+            <span class="prev-price"
+              >Price <span class="special-price">$26.25</span></span
+            >
+
+            <div class="shop-in-stock active-stock">
+              <span></span>
+              <span> In stock</span>
+            </div>
+
+            <div class="shop-payment">
+              <div class="shop-cart-btn">ADD TO CART</div>
+              <a href="#" class="shop-payment-options">More payment options</a>
+            </div>
+            <p class="paragraph">
+              Our signature mushroom cream base with mozzarella, loaded with
+              fresh sliced mushrooms, Grana Padano cheese, and black pepper.
+              Dusted with fresh parsley.
+            </p>
+          </div>
+          <i class="fa-solid fa-x shop-close"></i>
+        </div>
+        <div class="shop-preview" data-preview="p-8">
+          <div class="preview-image-box">
+            <img src="/images/shop-chocolat-cake.jpg" alt="prev pizza" />
+          </div>
+          <div class="preview-shop-info">
+            <div class="title-prev">Chocolate cake</div>
+
+            <span class="prev-price"
+              >Price <span class="special-price">$26.25</span></span
+            >
+
+            <div class="shop-in-stock active-stock">
+              <span></span>
+              <span> In stock</span>
+            </div>
+            <div class="shop-payment">
+              <div class="shop-cart-btn">ADD TO CART</div>
+              <a href="#" class="shop-payment-options">More payment options</a>
+            </div>
+            <p class="paragraph">
+              Our signature mushroom cream base with mozzarella, loaded with
+              fresh sliced mushrooms, Grana Padano cheese, and black pepper.
+              Dusted with fresh parsley.
+            </p>
+          </div>
+          <i class="fa-solid fa-x shop-close"></i>
+        </div>
+        <div class="shop-preview" data-preview="p-9">
+          <div class="preview-image-box">
+            <img src="/images/gallery-pizza-3.jpg" alt="prev pizza" />
+          </div>
+          <div class="preview-shop-info">
+            <div class="title-prev">Salami Pizza</div>
+            <!-- <div class="preview-shop-choice">
+              <div class="heading">Type</div>
+              <form>
+                <div>
+                  <label for="ready_04">
+                    <input
+                      type="radio"
+                      id="ready_04"
+                      name="eatChoice"
+                      value="readyToEat"
+                    />
+                    <span>Ready To Eat</span>
+                  </label>
+                </div>
+                <div>
+                  <label for="partially_04">
+                    <input
+                      type="radio"
+                      id="partially_04"
+                      name="eatChoice"
+                      value="partiallyCooked"
+                    />
+                    <span>Partially Cooked</span>
+                  </label>
+                </div>
+              </form>
+            </div> -->
+
+            <span class="prev-price"
+              >Price <span class="special-price">$26.25</span></span
+            >
+            <div class="shop-in-stock active-stock">
+              <span></span>
+              <span> In stock</span>
+            </div>
+            <div class="shop-payment">
+              <div class="shop-cart-btn">ADD TO CART</div>
+              <a href="#" class="shop-payment-options">More payment options</a>
+            </div>
+            <p class="paragraph">
+              A feast of genoa salami bathed in Pecorino Romano cheese and
+              mozzarella on organic tomato sauce. Dusted with fresh parsley.
+            </p>
+          </div>
+          <i class="fa-solid fa-x shop-close"></i>
+        </div>
+        <div class="shop-preview" data-preview="p-10">
+          <div class="preview-image-box">
+            <img src="/images/shop-gnocchi-meat-sauce.jpg" alt="prev pizza" />
+          </div>
+          <div class="preview-shop-info">
+            <div class="title-prev">Gnocchi Combination</div>
+
+            <span class="prev-price"
+              >Price <span class="special-price">$26.25</span></span
+            >
+            <div class="shop-in-stock active-stock">
+              <span></span>
+              <span> In stock</span>
+            </div>
+            <div class="shop-payment">
+              <div class="shop-cart-btn">ADD TO CART</div>
+              <a href="#" class="shop-payment-options">More payment options</a>
+            </div>
+            <p class="paragraph">
+              Gnocchi with three different sauces (bolognese, Alfredo, and
+              palomino). Served with a salad, choice of dressing, rolls, and
+              butter.
+            </p>
+          </div>
+          <i class="fa-solid fa-x shop-close"></i>
+        </div>
+        <div class="shop-preview" data-preview="p-11">
+          <div class="preview-image-box">
+            <img src="/images/shop-lettuce-wrap-burger.jpg" alt="prev pizza" />
+          </div>
+          <div class="preview-shop-info">
+            <div class="title-prev">Gourmet Burger</div>
+            <span class="prev-price"
+              >Price <span class="special-price">$26.25</span></span
+            >
+            <div class="shop-in-stock active-stock">
+              <span></span>
+              <span> In stock</span>
+            </div>
+            <div class="shop-payment">
+              <div class="shop-cart-btn">ADD TO CART</div>
+              <a href="#" class="shop-payment-options">More payment options</a>
+            </div>
+            <p class="paragraph">
+              This gourmet burger recipe is made with juicy ground beef, a
+              homemade red wine bacon sauce, caramelized onions, a whole grain
+              aioli and fresh watercress.
+            </p>
+          </div>
+          <i class="fa-solid fa-x shop-close"></i>
+        </div>
+        <div class="shop-preview" data-preview="p-12">
+          <div class="preview-image-box">
+            <img src="/images/shop-mediterranean-salad.jpg" alt="prev pizza" />
+          </div>
+          <div class="preview-shop-info">
+            <div class="title-prev">Mediterranean Salad</div>
+
+            <span class="prev-price"
+              >Price <span class="special-price">$26.25</span></span
+            >
+
+            <div class="shop-in-stock active-stock">
+              <span></span>
+              <span> In stock</span>
+            </div>
+            <div class="shop-payment">
+              <div class="shop-cart-btn">ADD TO CART</div>
+              <a href="#" class="shop-payment-options">More payment options</a>
+            </div>
+            <p class="paragraph">
+              full of bright fresh vegetables, sprinkled with the best parmesan
+              cheese and toasted sunflower seeds and tossed with a lemony, red
+              wine vinegar dressing.
+            </p>
+          </div>
+          <i class="fa-solid fa-x shop-close"></i>
+        </div>
+        <div class="shop-preview" data-preview="p-13">
+          <div class="preview-image-box">
+            <img src="/images/shop-orzo-pasta-salad.jpg" alt="prev pizza" />
+          </div>
+          <div class="preview-shop-info">
+            <div class="title-prev">Orzo Pasta Salad</div>
+            <span class="prev-price"
+              >Price <span class="special-price">$26.25</span></span
+            >
+            <div class="shop-in-stock active-stock">
+              <span></span>
+              <span> In stock</span>
+            </div>
+            <div class="shop-payment">
+              <div class="shop-cart-btn">ADD TO CART</div>
+              <a href="#" class="shop-payment-options">More payment options</a>
+            </div>
+            <p class="paragraph">
+              Orzo pasta salad with roasted vegetables and lemon vinaigrette is
+              the perfect Summer salad. It’s full of healthy vegetables and
+              tossed with a bright and zingy lemon dressing.
+            </p>
+          </div>
+          <i class="fa-solid fa-x shop-close"></i>
+        </div>
+        <div class="shop-preview" data-preview="p-14">
+          <div class="preview-image-box">
+            <img src="/images/shop-sourdough-bagels.jpg" alt="prev pizza" />
+          </div>
+          <div class="preview-shop-info">
+            <div class="title-prev">Sourdough Bagels</div>
+
+            <span class="prev-price"
+              >Price <span class="special-price">$26.25</span></span
+            >
+
+            <div class="shop-in-stock active-stock">
+              <span></span>
+              <span> In stock</span>
+            </div>
+            <div class="shop-payment">
+              <div class="shop-cart-btn">ADD TO CART</div>
+              <a href="#" class="shop-payment-options">More payment options</a>
+            </div>
+            <p class="paragraph">
+              Sourdough bagels are the ultimate breakfast or brunch food. Serve
+              them with cream cheese or butter, or use them as a delicious
+              vessel for a breakfast sandwich or lox board.
+            </p>
+          </div>
+          <i class="fa-solid fa-x shop-close"></i>
+        </div>
+        <div class="shop-preview" data-preview="p-15">
+          <div class="preview-image-box">
+            <img src="/images/shop-creamy-lemon-tart.jpg" alt="prev pizza" />
+          </div>
+          <div class="preview-shop-info">
+            <div class="title-prev">Creamy Lemon Tart</div>
+
+            <span class="prev-price"
+              >Price <span class="special-price">$26.25</span></span
+            >
+
+            <div class="shop-in-stock active-stock">
+              <span></span>
+              <span> In stock</span>
+            </div>
+            <div class="shop-payment">
+              <div class="shop-cart-btn">ADD TO CART</div>
+              <a href="#" class="shop-payment-options">More payment options</a>
+            </div>
+            <p class="paragraph">
+              This creamy lemon tart with fresh berries is a cross between a
+              lemon cheesecake and lemon curd tart. It’s creamy, lemony and
+              perfect for Spring.
+            </p>
+          </div>
+          <i class="fa-solid fa-x shop-close"></i>
+        </div>
+        <div class="shop-preview" data-preview="p-16">
+          <div class="preview-image-box">
+            <img src="/images/shop-ground-turkey-tacos.jpg" alt="prev pizza" />
+          </div>
+          <div class="preview-shop-info">
+            <div class="title-prev">Ground Turkey Tacos</div>
+            <span class="prev-price"
+              >Price <span class="special-price">$26.25</span></span
+            >
+            <div class="shop-in-stock active-stock">
+              <span></span>
+              <span> In stock</span>
+            </div>
+            <div class="shop-payment">
+              <div class="shop-cart-btn">ADD TO CART</div>
+              <a href="#" class="shop-payment-options">More payment options</a>
+            </div>
+            <p class="paragraph">
+              Our fresh tacos are delicious any way you make it. Mix and match
+              protein, toppings, house-made guacamole and salsa. Choose from a
+              hard or soft tortilla and make this a meal you may crave again
+              tomorrow.
+            </p>
+          </div>
+          <i class="fa-solid fa-x shop-close"></i>
+        </div>
+        <div class="shop-preview" data-preview="p-17">
+          <div class="preview-image-box">
+            <img src="/images/shop-puff-pastry-tart.jpg" alt="prev pizza" />
+          </div>
+          <div class="preview-shop-info">
+            <div class="title-prev">Puff Pastry Tart</div>
+            <span class="prev-price"
+              >Price <span class="special-price">$26.25</span></span
+            >
+            <div class="shop-in-stock active-stock">
+              <span></span>
+              <span> In stock</span>
+            </div>
+            <div class="shop-payment">
+              <div class="shop-cart-btn">ADD TO CART</div>
+              <a href="#" class="shop-payment-options">More payment options</a>
+            </div>
+            <p class="paragraph">
+              Light, versatile and ready to melt in the mouth, puff pastry tarts
+              are a winner. From nibbles to main meals or delightful desserts,
+              we’ve got just the inspiration you need to add a tart or two to
+              any menu.
+            </p>
+          </div>
+          <i class="fa-solid fa-x shop-close"></i>
+        </div>
+        <div class="shop-preview" data-preview="p-18">
+          <div class="preview-image-box">
+            <img src="/images/shop-picanha-steak.jpg" alt="prev pizza" />
+          </div>
+          <div class="preview-shop-info">
+            <div class="title-prev">Picanha Steak</div>
+            <span class="prev-price"
+              >Price <span class="special-price">$26.25</span></span
+            >
+            <div class="shop-in-stock active-stock">
+              <span></span>
+              <span> In stock</span>
+            </div>
+            <div class="shop-payment">
+              <div class="shop-cart-btn">ADD TO CART</div>
+              <a href="#" class="shop-payment-options">More payment options</a>
+            </div>
+            <p class="paragraph">
+              Picanha is a popular cut of beef found in Brazil. It is also
+              commonly found in Portugal. This cut is known for being juicy,
+              tender
+            </p>
+          </div>
+          <i class="fa-solid fa-x shop-close"></i>
+        </div>
+        <div class="shop-preview" data-preview="p-19">
+          <div class="preview-image-box">
+            <img src="/images/shop-lemon-cake.jpg" alt="prev pizza" />
+          </div>
+          <div class="preview-shop-info">
+            <div class="title-prev">Moist Lemon Cake</div>
+            <span class="prev-price"
+              >Price <span class="special-price">$26.25</span></span
+            >
+            <div class="shop-in-stock active-stock">
+              <span></span>
+              <span> In stock</span>
+            </div>
+            <div class="shop-payment">
+              <div class="shop-cart-btn">ADD TO CART</div>
+              <a href="#" class="shop-payment-options">More payment options</a>
+            </div>
+            <p class="paragraph">
+              Every bite of this supremely moist pound cake is bursting with
+              fresh lemon flavor and the lemon glaze on top will have you hooked
+              after just one bite.
+            </p>
+          </div>
+          <i class="fa-solid fa-x shop-close"></i>
+        </div>
+        <div class="shop-preview" data-preview="p-20">
+          <div class="preview-image-box">
+            <img src="/images/shop-feta-salad.jpg" alt="prev pizza" />
+          </div>
+          <div class="preview-shop-info">
+            <div class="title-prev">Greek Salad</div>
+            <span class="prev-price"
+              >Price <span class="special-price">$26.25</span></span
+            >
+            <div class="shop-in-stock active-stock">
+              <span></span>
+              <span> In stock</span>
+            </div>
+            <div class="shop-payment">
+              <div class="shop-cart-btn">ADD TO CART</div>
+              <a href="#" class="shop-payment-options">More payment options</a>
+            </div>
+            <p class="paragraph">
+              Romaine Lettuce, Cherry Tomato, Cucumber, Red Onion, Bell Pepper,
+              Feta Cheese, Dill, Olives, Dressed with Olive Oil.
+            </p>
+          </div>
+          <i class="fa-solid fa-x shop-close"></i>
+        </div>
+        <div class="overlay"></div>
+      </section>
+    </main>
+
+    <footer>
+      <!-- <div class="container"> -->
+      <nav class="secondary-navigation">
+        <div class="footer-list">
+          <ul role="list" class="footer-contact-us">
+            <li>
+              <a href="#" class="heading white-color"
+                >D<span class="color-orange">é</span>lice<span
+                  class="color-green"
+                  >L</span
+                >and</a
+              >
+            </li>
+            <li>
+              <p class="paragraph">
+                Ut enim ad minim veniam, quis nostrud at exercitation ullamco
+                laboris nisi nemo sit enim ipsam voluptatem quia voluptas
+              </p>
+            </li>
+            <li>
+              <div class="footer-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <span class="heading white-color">CONTACT US</span>
+          <ul role="list" class="footer-address">
+            <li>
+              <address>
+                <p class="footer-item">
+                  150 Duffy Ave, Hicksville, NY 11801, USA
+                </p>
+              </address>
+            </li>
+            <li>
+              <a class="footer-item" href="tel:+3805623157851"
+                >+38 056 23 15 7851</a
+              >
+            </li>
+            <li>
+              <a class="footer-item" href="mailto:delice.info@mail.com"
+                >delice.info@mail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <span class="heading white-color">QUICK LINKS</span>
+          <ul role="list">
+            <div class="footer-links">
+              <li><a class="footer-item" href="home.html">HOME</a></li>
+              <li><a class="footer-item" href="about.html">ABOUT</a></li>
+              <li><a class="footer-item" href="shop.html">SHOP</a></li>
+              <li><a class="footer-item" href="menu.html">MENU</a></li>
+              <li><a class="footer-item" href="support.html">SUPPORT</a></li>
+              <li><a class="footer-item" href="gallert.html">GALLERY</a></li>
+              <li><a class="footer-item" href="pages.html">PAGES</a></li>
+              <!-- <li><a class="footer-item" href="blog.html">BLOG</a></li> -->
+              <li><a class="footer-item" href="contact.html">CONTACT</a></li>
+              <li>
+                <a class="footer-item" href="reservation.html">RESERVATION</a>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <span class="heading white-color">RECENT POST</span>
+          <ul role="list" class="recent-post-container">
+            <li>
+              <div class="recent-post-item">
+                <div class="recent-post-image">
+                  <img src="images/special-offers-strawberry-cake.jpg" alt="" />
+                </div>
+                <div class="recent-post-text">
+                  <a class="footer-item" href="#">
+                    Lorem ipsum dolor sit amet, consectetur.
+                  </a>
+                  <span class="paragraph">April 17, 2022</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="recent-post-item">
+                <div class="recent-post-image">
+                  <img
+                    src="images/special-offers-cinnamon-pancakes.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="recent-post-text">
+                  <a class="footer-item" href="#">
+                    Lorem ipsum dolor sit amet, consectetur.
+                  </a>
+                  <span class="paragraph">April 17, 2022</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer-copyright">
+        <p>
+          © 2022 All Rights Reserved. Development & Desing by
+          <span class="owner">IMANE DRISSI</span>
+        </p>
+      </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script type="module" src="shop-products.js"></script>
+    <script type="module" src="main.js"></script>
+    <script></script>
+  </body>
+</html>

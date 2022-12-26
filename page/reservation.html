@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/pizza-favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/second.css" />
+    <link rel="stylesheet" href="../css/all.css" />
+    <title>Reservation</title>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONTS FOR TEST -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="mobile-nav">
+        <a href="#home">Delice</a>
+        <div class="nav-bars">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="main-nav"></div>
+      <div class="nav-header static-nav">
+        <nav class="primary-navigation">
+          <ul role="list" class="nav-list">
+            <li class="nav-list-item">
+              <a class="nav-link" href="../index.html">HOME</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="../about.html">about</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="../shop.html">shop</a>
+            </li>
+            <li class="nav-list-item dropdown-parent">
+              <a class="nav-link" href="javascript:">page</a>
+              <ul role="list" class="dropdown-list">
+                <li class="dropdown-item">
+                  <a  class="dropdown-link"  href="/page/reservation.html">reservation</a>
+                </li>
+                <li class="dropdown-item">
+                  <a  class="dropdown-link"  href="/page/services.html">services</a>
+                </li>
+                <li class="dropdown-item">
+                  <a  class="dropdown-link"  href="/page/team.html">chefs</a>
+                </li>
+                <li class="dropdown-item">
+                  <a  class="dropdown-link"  href="/page/menu.html">menu</a>
+                </li>
+                <li class="dropdown-item">
+                  <a  class="dropdown-link"  href="/page/gallery.html">gallery</a>
+                </li>
+                <li class="dropdown-item">
+                  <a  class="dropdown-link"  href="/page/comingsoon.html">coming soon</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="javascript:">BLOG</a>
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-link" href="../contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="nav-info">
+          <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <button class="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div class="search-preview">
+          <form action="" class="nav-search-preview">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Search for..."
+            />
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="main-hero reservation-hero">
+        <div class="main-hero-text">
+          <div class="hero-desc">
+            <h1 class="title white-color big-title">Reservation</h1>
+            <p class="title-text light-color">
+              Reservations are not required, but strongly encouraged. Please
+              share your details below or call (513) 977-65800
+            </p>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </section>
+      <section class="book-table">
+        <div class="container">
+          <div class="book-table-container">
+            <h2 class="title">Book A Table</h2>
+            <div class="contact-form-container">
+              <form action="" class="contact-form" id="rsv-form">
+                <div class="contact-row">
+                  <div class="input-element">
+                    <label for="reservation-date">Date</label>
+                    <input
+                      type="date"
+                      name="reservation-date"
+                      id="reservation-date"
+                    />
+                    <i
+                    class="fa-regular fa-circle-check input-check input-check-valid"
+                  ></i>
+                  <i
+                    class="fa-solid fa-circle-exclamation input-check input-check-error"
+                  ></i>
+                  <small class="input-error-msg">Error Message</small>
+                  </div>
+                  <div class="input-element">
+                    <label for="reservation-time">Hour</label>
+                    <input
+                      type="time"
+                      name="reservation-time"
+                      id="reservation-time"
+                      placeholder="HH:MM"
+                    />
+                    <i
+                    class="fa-regular fa-circle-check input-check input-check-valid"
+                  ></i>
+                  <i
+                    class="fa-solid fa-circle-exclamation input-check input-check-error"
+                  ></i>
+                  <small class="input-error-msg">Error Message</small>
+                  </div>
+                </div>
+                <div class="contact-row">
+                  <div class="input-element">
+                    <label for="reservation-guests">Guests</label>
+                    <input
+                      type="number"
+                      name="reservation-guests"
+                      id="reservation-guests"
+                      max="10"
+                    />
+                    <i
+                    class="fa-regular fa-circle-check input-check input-check-valid"
+                  ></i>
+                  <i
+                    class="fa-solid fa-circle-exclamation input-check input-check-error"
+                  ></i>
+                  <small class="input-error-msg">Error Message</small>
+                  </div>
+                  <div class="input-element">
+                    <label for="reservation-phone">Phone</label>
+                    <input
+                      type="tel"
+                      name="reservation-phone"
+                      id="reservation-phone"
+                      placeholder="(123) 456 78 90"
+                    />
+                    <i
+                    class="fa-regular fa-circle-check input-check input-check-valid"
+                  ></i>
+                  <i
+                    class="fa-solid fa-circle-exclamation input-check input-check-error"
+                  ></i>
+                  <small class="input-error-msg">Error Message</small>
+                  </div>
+                </div>
+                <div class="contact-row">
+                  <div class="input-element">
+                    <label for="reservation-phone">Full Name</label>
+                    <input
+                      type="text"
+                      name="reservation-full-name"
+                      id="reservation-full-name"
+                      placeholder="FULL NAME"
+                    />
+                    <i
+                    class="fa-regular fa-circle-check input-check input-check-valid"
+                  ></i>
+                  <i
+                    class="fa-solid fa-circle-exclamation input-check input-check-error"
+                  ></i>
+                  <small class="input-error-msg">Error Message</small>
+                  </div>
+                </div>
+                <div class="input-element">
+                  <label for="message">Message</label>
+                  <textarea name="message" id="rsv-message" rows="8"></textarea>
+                  <i
+                  class="fa-regular fa-circle-check input-check input-check-valid"
+                ></i>
+                <i
+                  class="fa-solid fa-circle-exclamation input-check input-check-error"
+                ></i>
+                <small class="input-error-msg">Error Message</small>
+                </div>
+                <input
+                  type="submit"
+                  value="send a message"
+                  data-type="form"
+                  placeholder="SUPPOTIVE MESSAGE"
+                  class="submit-contact"
+                />
+          
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reservation-contact-us">
+        <div class="container">
+          <div class="reservation-contact-container">
+            <div class="section-head flow">
+              <h2 class="title">Contact US</h2>
+              <p class="title-text">
+                Thank you for visiting our website. If you have any questions or
+                would like to share your Delice Land story please contact us
+                below.
+              </p>
+            </div>
+            <div class="reservation-contact-time">
+              <div class="card-reservation visit-us-time">
+                <div class="section-head flow-s">
+                  <h3 class="heading">WORKING TIME</h3>
+                  <p class="paragraph">
+                    Ut enimex ea ad minim veniam, quis nostrud exercitation
+                    ullamco laboris.
+                  </p>
+                </div>
+  
+                <ul class="leaders">
+                  <li>
+                    <span class="left">Monday - Friday</span
+                    ><span>...................................................</span
+                    ><span class="right">09:00 - 23:00</span>
+                  </li>
+  
+                  <li>
+                    <span class="left">Saturday</span>
+                    <span
+                      >...............................................................</span
+                    >
+                    <span class="right">11:00 - 01:00</span>
+                  </li>
+  
+                  <li>
+                    <span class="left">Sunday</span>
+                    <span
+                      >.................................................................</span
+                    >
+                    <span class="right">12:00 - 23:00</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="contact-info-box">
+              <div class="contact-info-item">
+                <i class="fa-solid fa-phone"></i>
+                <h3 class="heading">CALL US</h3>
+                <a class="reservation-tel" href="tel:+3805623157851"
+                >+38 056 23 15 7851</a
+              >
+              </div>
+              <div class="contact-info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3 class="heading">FIND US</h3>
+                <address>
+                  <p>
+                    150 Duffy Ave, Hicksville, NY 11801, USA
+                  </p>
+                </address>
+              </div>
+              <div class="contact-info-item">
+                <i class="fa-regular fa-envelope"></i>
+                <h3 class="heading">MAIL US</h3>
+                <a href="mailto:delice.info@mail.com"
+                >delice.info@mail.com</a
+              >
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <!-- <div class="container"> -->
+      <nav class="secondary-navigation">
+        <div class="footer-list">
+          <ul role="list" class="footer-contact-us">
+            <li>
+              <a href="#" class="heading white-color"
+                >D<span class="color-orange">é</span>lice<span
+                  class="color-green"
+                  >L</span
+                >and</a
+              >
+            </li>
+            <li>
+              <p class="paragraph">
+                Ut enim ad minim veniam, quis nostrud at exercitation ullamco
+                laboris nisi nemo sit enim ipsam voluptatem quia voluptas
+              </p>
+            </li>
+            <li>
+              <div class="footer-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <span class="heading white-color">CONTACT US</span>
+          <ul role="list" class="footer-address">
+            <li>
+              <address>
+                <p class="footer-item">
+                  150 Duffy Ave, Hicksville, NY 11801, USA
+                </p>
+              </address>
+            </li>
+            <li>
+              <a class="footer-item" href="tel:+3805623157851"
+                >+38 056 23 15 7851</a
+              >
+            </li>
+            <li>
+              <a class="footer-item" href="mailto:delice.info@mail.com"
+                >delice.info@mail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <span class="heading white-color">QUICK LINKS</span>
+          <ul role="list">
+            <div class="footer-links">
+              <li><a class="footer-item" href="home.html">HOME</a></li>
+              <li><a class="footer-item" href="about.html">ABOUT</a></li>
+              <li><a class="footer-item" href="shop.html">SHOP</a></li>
+              <li><a class="footer-item" href="menu.html">MENU</a></li>
+              <li><a class="footer-item" href="support.html">SUPPORT</a></li>
+              <li><a class="footer-item" href="gallert.html">GALLERY</a></li>
+              <li><a class="footer-item" href="pages.html">PAGES</a></li>
+              <li><a class="footer-item" href="blog.html">BLOG</a></li>
+              <li><a class="footer-item" href="contact.html">CONTACT</a></li>
+              <li>
+                <a class="footer-item" href="reservation.html">RESERVATION</a>
+              </li>
+            </div>
+          </ul>
+        </div>
+        <div class="footer-list">
+          <span class="heading white-color">RECENT POST</span>
+          <ul role="list" class="recent-post-container">
+            <li>
+              <div class="recent-post-item">
+                <div class="recent-post-image">
+                  <img src="../images/special-offers-strawberry-cake.jpg" alt="" />
+                </div>
+                <div class="recent-post-text">
+                  <a class="footer-item" href="#">
+                    Lorem ipsum dolor sit amet, consectetur.
+                  </a>
+                  <span class="paragraph">April 17, 2016</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="recent-post-item">
+                <div class="recent-post-image">
+                  <img
+                    src="../images/special-offers-cinnamon-pancakes.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="recent-post-text">
+                  <a class="footer-item" href="#">
+                    Lorem ipsum dolor sit amet, consectetur.
+                  </a>
+                  <span class="paragraph">April 17, 2016</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer-copyright">
+        <p>
+          © 2022 All Rights Reserved. Development & Desing by
+          <span class="owner">IMANE DRISSI</span>
+        </p>
+      </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
