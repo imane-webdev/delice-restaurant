@@ -611,7 +611,7 @@
 /* ///////////////////////////////CONTACT PAGE\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
 .contact-us-hero {
-  background-image: url("images/contact-us-hero.jpg");
+  background-image: url("../images/contact-us-hero.jpg");
   background-position: 50% 50%;
 }
 
@@ -847,7 +847,7 @@
   color: var(--color-accent-300);
 }
 .shop-hero {
-  background-image: url("images/shop-hero.jpg");
+  background-image: url("../images/shop-hero.jpg");
 }
 
 .shop-section-container {
