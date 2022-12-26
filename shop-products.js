@@ -16,7 +16,7 @@ export let shopProductsArr = [
         DeliceLand uses baby spinach because it is sweeter than mature spinach.
         Spinach is front and center on our Spinach & Feta pizza. The vegetable 
         balances the tangy feta cheese, and spinach’s earthy flavor matches the nuttiness of Parmesan cheese.`,
-        img:"/images/shop-spinash-pizza-640X640.jpg",
+        img:"images/shop-spinash-pizza-640X640.jpg",
         stock:10,
         tast:[tast.tv],
         cat:"pizza",
@@ -27,7 +27,7 @@ export let shopProductsArr = [
         price:12,
         desc:`White Forest Cake is two layers of soft, buttery White
         Chocolate Cake filled with amaretto-spiked Cherry Sauce`,
-        img:"/images/shop-white-chocolate-cherry-cake.jpg",
+        img:"images/shop-white-chocolate-cherry-cake.jpg",
         stock:10,
         tast:[tast.tch],
         cat:"dessert",
@@ -38,7 +38,7 @@ export let shopProductsArr = [
         price:10,
         desc:`Organic kale, dried cranberries, almonds, shaved
         parmesan, avocado, with balsamic vinaigrette dressing`,
-        img:"/images//shop-green-salad-640X640.jpg",
+        img:"images//shop-green-salad-640X640.jpg",
         stock:10,
         tast:[tast.tc],
         cat:"salad",
@@ -49,7 +49,7 @@ export let shopProductsArr = [
         desc:` Loaded with fresh mushrooms, prosciutto ham, artichoke
         hearts and mozzarella on organic tomato sauce. Dusted
         with fresh parsley.`,
-        img:"/images/shop-pizza-quattro-stagioni.jpg",
+        img:"images/shop-pizza-quattro-stagioni.jpg",
         stock:10,
         tast:[tast.tc],
         cat:"pizza",
@@ -63,7 +63,7 @@ export let shopProductsArr = [
         Dark and decadent brownies, folded with crunchy pecans,
         hug a layer of creamy caramel. Enjoy four of these
         famous treats in a decorative gift tin.`,
-        img:"/images/shop-brownies.jpg",
+        img:"images/shop-brownies.jpg",
         stock:10,
         tast:[tast.tch],
         cat:"dessert",
@@ -77,7 +77,7 @@ export let shopProductsArr = [
         Dark and decadent brownies, folded with crunchy pecans,
         hug a layer of creamy caramel. Enjoy four of these
         famous treats in a decorative gift tin.`,
-        img:"/images/shop-pasta-and-meat-balls.jpg",
+        img:"images/shop-pasta-and-meat-balls.jpg",
         stock:10,
         tast:[tast.tb],
         cat:"pasta",
@@ -89,7 +89,7 @@ export let shopProductsArr = [
         desc:` Our signature mushroom cream base with mozzarella,
         loaded with fresh sliced mushrooms, Grana Padano cheese,
         and black pepper. Dusted with fresh parsley.`,
-        img:"/images/shop-mushroom-pizza.jpg",
+        img:"images/shop-mushroom-pizza.jpg",
         stock:10,
         tast:[tast.tc],
         cat:"pizza",
@@ -100,7 +100,7 @@ export let shopProductsArr = [
         desc:`Our signature mushroom cream base with mozzarella,
         loaded with fresh sliced mushrooms, Grana Padano cheese,
         and black pepper. Dusted with fresh parsley.`,
-        img:"/images/shop-chocolat-cake.jpg",
+        img:"images/shop-chocolat-cake.jpg",
         stock:10,
         tast:[tast.tch],
         cat:"dessert",
@@ -112,7 +112,7 @@ export let shopProductsArr = [
         desc:` A feast of genoa salami bathed in Pecorino Romano cheese
         and mozzarella on organic tomato sauce. Dusted with
         fresh parsley.`,
-        img:"/images/gallery-pizza-3.jpg",
+        img:"images/gallery-pizza-3.jpg",
         stock:10,
         tast:[tast.tb],
         cat:"pizza",
@@ -124,7 +124,7 @@ export let shopProductsArr = [
         desc:` Gnocchi with three different sauces (bolognese, Alfredo,
             and palomino). Served with a salad, choice of dressing,
             rolls, and butter.`,
-        img:"/images/shop-gnocchi-meat-sauce.jpg",
+        img:"images/shop-gnocchi-meat-sauce.jpg",
         stock:10,
         tast:[tast.tb,tast.ts],
         cat:"pasta",
@@ -136,7 +136,7 @@ export let shopProductsArr = [
         desc:`This gourmet burger recipe is made with juicy ground
         beef, a homemade red wine bacon sauce, caramelized
         onions, a whole grain aioli and fresh watercress.`,
-        img:"/images/shop-lettuce-wrap-burger.jpg",
+        img:"images/shop-lettuce-wrap-burger.jpg",
         stock:10,
         tast:[tast.tb],
         cat:"others",
@@ -148,7 +148,7 @@ export let shopProductsArr = [
         desc:`full of bright fresh vegetables, sprinkled with the best
         parmesan cheese and toasted sunflower seeds and tossed
         with a lemony, red wine vinegar dressing.`,
-        img:"/images/shop-mediterranean-salad.jpg",
+        img:"images/shop-mediterranean-salad.jpg",
         stock:10,
         tast:[tast.tc],
         cat:"salad",
@@ -162,7 +162,7 @@ export let shopProductsArr = [
         vinaigrette is the perfect Summer salad. It’s full of
         healthy vegetables and tossed with a bright and zingy
         lemon dressing.`,
-        img:"/images/shop-orzo-pasta-salad.jpg",
+        img:"images/shop-orzo-pasta-salad.jpg",
         stock:10,
         tast:[tast.tc],
         cat:"pasta",
@@ -176,7 +176,7 @@ export let shopProductsArr = [
         food. Serve them with cream cheese or butter, or use
         them as a delicious vessel for a breakfast sandwich or
         lox board.`,
-        img:"/images/shop-sourdough-bagels.jpg",
+        img:"images/shop-sourdough-bagels.jpg",
         stock:10,
         tast:[],
         cat:"others",
@@ -188,7 +188,7 @@ export let shopProductsArr = [
         desc:`This creamy lemon tart with fresh berries is a cross
         between a lemon cheesecake and lemon curd tart. It’s
         creamy, lemony and perfect for Spring.`,
-        img:"/images/shop-creamy-lemon-tart.jpg",
+        img:"images/shop-creamy-lemon-tart.jpg",
         stock:10,
         tast:[],
         cat:"dessert",
@@ -201,7 +201,7 @@ export let shopProductsArr = [
         and match protein, toppings, house-made guacamole and
         salsa. Choose from a hard or soft tortilla and make this
         a meal you may crave again tomorrow.`,
-        img:"/images/shop-ground-turkey-tacos.jpg",
+        img:"images/shop-ground-turkey-tacos.jpg",
         stock:10,
         tast:[tast.tp],
         cat:"others",
@@ -214,7 +214,7 @@ export let shopProductsArr = [
         pastry tarts are a winner. From nibbles to main meals or
         delightful desserts, we’ve got just the inspiration you
         need to add a tart or two to any menu.`,
-        img:"/images/shop-puff-pastry-tart.jpg",
+        img:"images/shop-puff-pastry-tart.jpg",
         stock:10,
         tast:[],
         cat:"others",
@@ -226,7 +226,7 @@ export let shopProductsArr = [
         desc:`Picanha is a popular cut of beef found in Brazil. It is
         also commonly found in Portugal. This cut is known for
         being juicy, tender`,
-        img:"/images/shop-picanha-steak.jpg",
+        img:"images/shop-picanha-steak.jpg",
         stock:10,
         tast:[tast.tb],
         cat:"others",
@@ -238,7 +238,7 @@ export let shopProductsArr = [
         desc:` Every bite of this supremely moist pound cake is
         bursting with fresh lemon flavor and the lemon glaze on
         top will have you hooked after just one bite.`,
-        img:"/images/shop-lemon-cake.jpg",
+        img:"images/shop-lemon-cake.jpg",
         stock:10,
         tast:[],
         cat:"dessert",
@@ -251,7 +251,7 @@ export let shopProductsArr = [
         Romaine Lettuce, Cherry Tomato, Cucumber, Red Onion,
         Bell Pepper, Feta Cheese, Dill, Olives, Dressed with
         Olive Oil.`,
-        img:"/images/shop-feta-salad.jpg",
+        img:"images/shop-feta-salad.jpg",
         stock:10,
         tast:[tast.tc],
         cat:"salad",
