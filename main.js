@@ -140,7 +140,17 @@ navBars.addEventListener("click",function(){
 
 const activePage = window.location.pathname;
 const navLinks = document.querySelectorAll(".nav-link");
+const homelink = document.querySelector(".home-link");
+
 const dropNavLinks = document.querySelectorAll(".dropdown-link");
+
+//Redirect to home page
+// if (window.location.pathname === "/")
+//     window.location = "/index.html";
+var parts = location.pathname.split('/');
+if(parts[parts.length - 1] === '') {
+    location.href = 'index.html';
+}
 
 navLinks.forEach(link => {
   if(link.href.includes(`${activePage}`)){
