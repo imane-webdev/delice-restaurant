@@ -190,7 +190,7 @@
 /* /////TEAM HERO */
 
 .team-hero {
-  background-image: url("images/hero-team.jpg");
+  background-image: url("../images/hero-team.jpg");
 }
 
 .team-section {
@@ -308,7 +308,7 @@
 
 /* ///////////////////////SERVICES PAGE\\\\\\\\\\\\\\\\\\\\\\\\ */
 .services-hero {
-  background-image: url("images/services-hero.jpg");
+  background-image: url("../images/services-hero.jpg");
 }
 
 .service {
@@ -360,7 +360,7 @@
 
 /* //////////////////GALLERY\\\\\\\\\\\\\\\\\\\\\ */
 .gallery-hero {
-  background-image: url("images/gallery-hero.jpg");
+  background-image: url("../images/gallery-hero.jpg");
   background-position: 50% 50%;
 }
 
@@ -412,7 +412,7 @@
 }
 
 .about-hero {
-  background-image: url("images/about-us-hero.jpg");
+  background-image: url("../images/about-us-hero.jpg");
   background-position: 50% 50%;
 }
 
@@ -535,11 +535,11 @@
 }
 
 .about-customer {
-  background-image: url("images/about-customer-section.jpg");
+  background-image: url("../images/about-customer-section.jpg");
 }
 
 .about-supplier {
-  background-image: url("images/about-supplier-hero.jpg");
+  background-image: url("../images/about-supplier-hero.jpg");
   background-position: 50% 50%;
 }
 .about-content-box {
@@ -723,7 +723,7 @@
 /* ///////////////////////////////MENU PAGE\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 
 .menu-hero {
-  background-image: url("images/our-menu-hero.jpg");
+  background-image: url("../images/our-menu-hero.jpg");
 }
 
 .menu-section {
@@ -1627,7 +1627,7 @@ select {
 
 /* -------------COMING SOON PAGE------------ */
 .coming-soon-hero {
-  background-image: url("images/coming-soon-cover.jpg");
+  background-image: url("../images/coming-soon-cover.jpg");
   height: 100vh;
 }
 .soon-hero-text {
