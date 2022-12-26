@@ -1,4 +1,4 @@
-@import "/css/style.css";
+@import "../css/style.css";
 /* Utility class */
 .big-title {
   font-size: var(--fs-700);
